@@ -1,0 +1,56 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background: #E4E4E4 url(../img/wagon_wheel_graphic.png) no-repeat left center;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    /*text-transform:uppercase;*/
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align:right;
+
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+    }
+}
+
+h1 {
+    font-weight: normal;  
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -14px;
+    /*for desktop*/
+    cursor: pointer;
+}
+
+.slideUp {
+    transition: transform 1s;
+    transform: translateY(-50px);
+}
+
+.hidden {
+    display: none;
+}
