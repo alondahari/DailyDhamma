@@ -36,16 +36,7 @@
 <!-- Plugins -->
 
 <!-- Core plugins -->
-<gap:plugin name="org.apache.cordova.media" />
-
-<!-- Third party plugins -->
-<!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
-<!--
-<gap:plugin name="com.phonegap.plugins.barcodescanner" />
--->
-
-<!-- Define app icon for each platform. -->
-<icon src="assets/icon.png" />
+<!-- <gap:plugin name="org.apache.cordova.media" /> -->
 
 <!--
 Define access to external domains.
